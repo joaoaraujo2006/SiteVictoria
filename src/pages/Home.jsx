@@ -24,11 +24,11 @@ export default function Home() {
             </header>
 
             {/* Hero Section */}
-            <section id="home" className="hero">
+            <section id="home" className="hero section-space">
                 <div className="hero-content">
                     <div className="hero-text">
-                        <h1 className="hero-title">NUTRIR É UM ATO DE AMOR COM VOCÊ!</h1>
-                        <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#5D4037', marginBottom: '2rem' }}>
+                        <h1 className="hero-title ">NUTRIR É UM ATO DE AMOR COM VOCÊ!</h1>
+                        <p className=''>
                             Sou Victoria Correa, nutricionista formada pela Universidade de São Paulo (USP) 
                             e pós-graduanda em Emagrecimento e Metabolismo. Acredito que uma alimentação equilibrada e prazerosa é a chave para conquistar 
                             o corpo dos sonhos e a saúde sem abrir mão do prazer de comer. Apaixonada por nutrição e pelo 
@@ -46,8 +46,8 @@ export default function Home() {
 
 
             {/* Consultório Section */}
-            <section className="section">
-            <h2 className="section-title">CONSULTÓRIO</h2>
+            <section className="section section-none section-space">
+            <h2 className="section-title section-title-consultorio">CONSULTÓRIO</h2>
                 <div className="section-content">
                     <div className="section-text">
                     
@@ -61,11 +61,11 @@ export default function Home() {
                             convidando você a vivenciar o autocuidado e a conexão com seu corpo.
                         </p>
                         <p>
-                            <strong>Agende seu atendimento presencial e viva essa experiência.</strong>
+                            
+                            <strong><br></br>Agende seu atendimento presencial e viva essa experiência.</strong>
                         </p>
                     </div>
-                    <div style={{ display: 'flex', gap: '0.2rem', flexWrap: 'wrap', justifyContent: 'center'
-                     }}>
+                    <div className='section-total-image'>
                         <img className="section-image img2" src={con1}/>
                             {/* Placeholder para foto do consultório 1 */}
                         <img className="section-image" src={con2}/>
