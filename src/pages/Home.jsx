@@ -2,13 +2,15 @@ import React from 'react';
 import '../css/home.css';
 import logo from '../assets/logo.png'
 import logoNB from '../assets/logo-nolabel.png'
+import {motion} from 'motion/react'
+import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 
 import FotoVic from '../assets/Victoria-image.jpg'
 import Apodimometro from '../assets/Apodimometro.jpg'
 import con1 from '../assets/con1.jpg'
 import con2 from '../assets/con2.jpg'
 
-import {motion} from 'motion/react'
+
 
 import dpArlene from '../assets/depoimentos/Arlene.jpg'
 import dpFernanda from '../assets/depoimentos/Fernanda.jpg'
@@ -221,10 +223,10 @@ export default function Home() {
                     
                     <div className="footer-social">
                         <button className="social-button">
-                            📱 WHATSAPP
+                        <AiOutlineInstagram />
                         </button>
                         <button className="social-button">
-                            📷 INSTAGRAM
+                        <AiOutlineWhatsApp />
                         </button>
                     </div>
                 </div>

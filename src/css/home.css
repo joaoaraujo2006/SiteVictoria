@@ -522,7 +522,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .footer-brand {
@@ -545,6 +544,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: flex-start;
+  
 }
 
 .footer-title {
@@ -559,31 +560,34 @@ body {
   opacity: 0.9;
   font-family: 'Belleza';
   color: #8D6E63;
+  
 }
 
 .footer-social {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  align-items: center;
 }
 
 .social-button {
-  background: rgba(0, 0, 0, 0.1);
   border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  color: white;
-  font-size: 0.9rem;
+  background-color: transparent;
+  color: #8D6E63;
+  font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social-button:hover {
-  background: rgba(255, 255, 255, 0.2);
+  color: #5D4037;
+  transition: 0.5s;
+  scale: 1.05
 }
 
 .footer-copyright {
