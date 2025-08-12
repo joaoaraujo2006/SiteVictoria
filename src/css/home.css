@@ -22,7 +22,7 @@ body {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,16 +36,15 @@ body {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #8D6E63, #5D4037);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 1rem;
+  padding: 0;
+ 
 }
 
 .brand-text {
@@ -73,9 +72,10 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #5D4037;
-  font-weight: 500;
+  color: #a2786b;
+  font-weight: 700;
   transition: color 0.3s ease;
+  font-family: 'Belleza';
 }
 
 .nav-link:hover {
@@ -91,6 +91,8 @@ body {
   background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
   position: relative;
   overflow: hidden;
+  background-image: url('../assets/fundos/fundo-hero.png');
+  background-size: cover;
 }
 
 .hero::before,
@@ -123,16 +125,25 @@ body {
 }
 
 .hero-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #5D4037;
   text-align: justify;
   font-family: 'Belleza';
+  flex-direction: column;
   
+}
+.hero-container-icon{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.logoVic{
+  width: 10rem;
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #5D4037;
   margin-bottom: 2rem;
@@ -146,12 +157,13 @@ body {
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 20px;
+  border-radius: 14px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 20px rgba(93, 64, 55, 0.3);
+  font-family: 'Belleza';
 }
 
 .cta-button:hover {
@@ -178,7 +190,8 @@ body {
   justify-content: center;
   color: #8D6E63;
   font-size: 1.2rem;
-  box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.378);
+  margin-top: 2rem;
 }
 
 .image-caption {
@@ -238,10 +251,11 @@ body {
   height: auto;
   align-items: flex-end;
   width: auto;
+  padding: 0;
 }
 .section-image {
   width: 300px;
-  height: 550px;
+  height: 480px;
   background: linear-gradient(135deg, #E0E0E0, #F5F5F5);
   display: flex;
   align-items: center;
@@ -253,7 +267,7 @@ body {
   border-top-right-radius: 150px;
 }
 .img2{
-  height: 450px;
+  height: 430px;
   position: relative;
   left: 100px;
   border: 10px solid #FAFAFA;
@@ -284,10 +298,11 @@ body {
 .services-list li {
   padding: 1rem 0;
   border-bottom: 1px solid rgba(93, 64, 55, 0.1);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #5D4037;
   position: relative;
   padding-left: 2rem;
+  font-family: 'Belleza';
 }
 
 .services-list li::before {
@@ -306,8 +321,8 @@ body {
 }
 
 .caliper-image {
-  width: 150px;
-  height: 200px;
+  width: 12rem;
+  height: 20rem;
   background: linear-gradient(135deg, #E0E0E0, #F5F5F5);
   border-radius: 15px;
   display: flex;
@@ -315,25 +330,27 @@ body {
   justify-content: center;
   color: #8D6E63;
   font-size: 1rem;
+
 }
 
 .logos-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
 .logo-item {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #E0E0E0, #F5F5F5);
+  background-color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8D6E63;
   font-size: 0.8rem;
   font-weight: 600;
+  position: relative;
+  object-fit: cover;
 }
 
 /* Special Section */
@@ -372,22 +389,24 @@ body {
 }
 
 .focus-image {
-  width: 120px;
+  width: 160px;
   height: 120px;
   background: linear-gradient(135deg, #E0E0E0, #F5F5F5);
   border-radius: 15px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #8D6E63;
   font-size: 0.9rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.219);
+  border: 1px solid white
 }
 
 .focus-title {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #5D4037;
+  color: #ffffff;
 }
 
 /* Testimonials */
@@ -410,35 +429,50 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial::before {
-  content: '"';
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  font-size: 4rem;
-  color: #8D6E63;
-  opacity: 0.3;
+  content: '';
 }
 
 .testimonial-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #5D4037;
-  margin-bottom: 1rem;
+  font-family: 'Belleza';
+  font-weight: 400;
 }
 
 .testimonial-author {
   font-weight: 600;
   color: #8D6E63;
+  margin-top: 0.5rem;
+  font-family: 'Belleza';
+  font-weight: bold;
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 /* Contact Section */
 .contact-section {
   padding: 5rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
+  background-color: #fef5ec;
+  min-height: 90vh;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
 }
 
 .contact-title {
@@ -446,13 +480,13 @@ body {
   font-weight: 700;
   color: #5D4037;
   margin-bottom: 2rem;
+  font-family: 'Belleza';
 }
 
 .contact-buttons {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .contact-button {
@@ -460,12 +494,13 @@ body {
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 20px rgba(93, 64, 55, 0.3);
+  font-family: 'Belleza';
 }
 
 .contact-button:hover {
@@ -475,8 +510,8 @@ body {
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
-  color: white;
+  background-color: white;
+  color: rgb(0, 0, 0);
   padding: 2rem;
 }
 
@@ -497,10 +532,7 @@ body {
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #8D6E63, #5D4037);
-  border-radius: 50%;
+  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,20 +550,25 @@ body {
 .footer-title {
   font-weight: 600;
   font-size: 1.1rem;
+  font-family: 'Belleza';
+  color: #8D6E63;
 }
 
 .footer-text {
   font-size: 0.9rem;
   opacity: 0.9;
+  font-family: 'Belleza';
+  color: #8D6E63;
 }
 
 .footer-social {
   display: flex;
   gap: 1rem;
+  flex-direction: column;
 }
 
 .social-button {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -555,7 +592,8 @@ body {
   text-align: center;
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #8D6E63;
 }
 
 /* Responsive Design */
